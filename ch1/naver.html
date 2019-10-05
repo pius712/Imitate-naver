@@ -11,13 +11,16 @@
 <body>
     <header>
         <div class="upper">
-            <div class='head_center'> <!--가운데 정렬용 div-->
+            <div class='header_center'> <!--가운데 정렬용 div-->
             <!-- 속성명: 속성값; 속석명2: 속성값2 -->
             <!-- 인라인 스타일 -->
 
-                <div id ="logo_area">
+                <div class ="logo_area">
                     <h1>
-                        <a class="naver_logo" href="www.naver.com">네이버</a>
+                        <a href="www.naver.com">
+                            <span class="naver_logo" >네이버</span>
+                        </a>
+
                     </h1>
                 </div>
                 <div class="link_area">
@@ -25,13 +28,17 @@
                         <a class="jr_naver">쥬니어네이버</a>
                         <a class="happy_bean">해피빈</a>
                 </div>
-                <div id="serach_area" class="serach_area">
+                <div id="search_area" class="search_area">
                     <form action="">
                         <fieldset>
                             <!-- <legend></legend> -->
-                            <input />
-                            <span class='green_window'></span>
-                            <button>검색</button>
+                            
+                            <span class='green_window'>
+                                    <input class="input_text"/>
+                            </span>
+                            <button>
+                                <span class="blind">검색</span>
+                            </button>
                         </fieldset>
                     </form>
                 </div>
@@ -49,22 +56,36 @@
                </ul>
             </div>
         </div>
-        
-        
     </header>    
     <div class="container">
         <div class="column_left"> 
-
         </div>
-        <div class="column_rigt">
-            <h2>로그인</h2>
+        <div class="column_right">
+            <div id="account" class ="section_login">
+                <h2 class="blind">로그인</h2>
+                <div class="login_local">
+                    <p class="login_text">네이버를 더 안전하고 편리하게 이용하세요</p>
+                    <a class="login_btn" href="./login">
+                        <i class="login_icon">
+                            <span class="blind">Naver 로그인</span>
+                        </i>
+                    </a>
+                </div>
+                <div clss ="login_links">
+                    <span class = "login_link_find">
+                        <a  href="">아이디</a>
+                        <a  href="">비밀번호 찾기</a>
+                    </span>
+                    <a class ="login_link_join" href="">회원가입</a>
+                </div>
+            </div>
         </div>
     </div> 
-    <h3>급상승 검색어</h3>
+    <!-- <h3 class="blind">급상승 검색어</h3>
     <h3>연합뉴스</h3>
     <h3>언론사목록</h3>
     
-    <h2>주제형캐스트</h2>
+    <h2>주제형캐스트</h2> -->
     <div>
     </div>
     <div>
