@@ -5,5 +5,5 @@
 
 ``` document.querySelector('body').parentNode.removeChild(document.head); ```
 
-![css가 제거된 상태](../img/cssRemoved.png)
-![heading](../img/headingsmap.png)
+![css가 제거된 상태](./img/cssRemoved.png)
+![heading](./img/headingsmap.png)
