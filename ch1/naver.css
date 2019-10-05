@@ -1,0 +1,23 @@
+/* 선택자(selector */
+
+#header-center{
+    margin:0; 
+    width: 1080px;
+}
+#header-search >h1 {
+    width: 280px;
+    display: inline-block;
+}
+/* 자식 */
+
+#header-search h2{
+    display:none;
+}
+#header-search fieldset{
+    width:520px;
+    display: inline-block;
+} 
+/* #header-search h1{
+    이 경우에는 자손 태그 
+} */
+/* div가 아닌 경우에는 id 앞에 태그 생략하면 안된다. */
