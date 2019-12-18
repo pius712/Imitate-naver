@@ -9,26 +9,25 @@
     <title>네이버</title>
 </head>
 <body>
-    <!-- <h2>로그인</h2>
-    <h2>타임스퀘어</h2>
-    <h2>주제형캐스트</h2>
-    <h3>연합뉴스</h3>
-    <h3>뉴스스탠드</h3>
-    <h3>언론사목록</h3> -->
     <header>
-        <div class="header-center">  <!-- 가운데 정렬용 div-->
-            <div>
+        <!-- <div style="background-color:yellow">
+            <div style="float: right; background-color:green; height: 200px;">둥둥둥둥</div>
+            <div>가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사</div>
+        </div> -->
+        <div class="center-flex">  <!-- 가운데 정렬용 div-->
+            <div class="header-top"">
                 <!-- <div style="display:inline-block">네이버를 시작페이지로</div>
                 <div style="display:inline-block">쥬니어 네이버</div> -->
                 <!-- <div style="display:inline-block">해피빈</div> -->
-                <span>네이버를 시작페이지로</span>
-                <span>쥬니어 네이버</span>
-                <span>해피빈</span>
+                <a href="www.naver.com"><span>네이버를 시작페이지로 |</span></a>
+                <span>쥬니어 네이버 |</span>
+                <span>해피빈 |</span>
             </div>
             <div class ="header-search">
-                <a href= "https://www.naver.com">
-                    <h1 >
-                        <span style="display:none">네이버</span>
+                    <h1>
+                        <a href= "https://www.naver.com">
+                            <span class="naver-text">네이버</span>
+                        </a>
                     </h1>
                 </a>
                 <h2 class="blind">검색창</h2>
@@ -44,35 +43,53 @@
             </div>
             
         </div>
-
+        <nav>
+            <div class="center-nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span></span>
+                            <span class="blind">카페</span>
+                        </a>
+                    </li> <!-- list item -->
+                    <li><a href=""><span></span><span class="blind">블로그</span></a></li> <!-- list item -->
+                    <li><a href=""><span></span><span class="blind">지식인</span></a></li> <!-- list item -->
+                    <li><a href=""><span></span><span class="blind">쇼핑</span></a></li> <!-- list item -->
+                    <li><a href=""><span></span><span class="blind">네이버페이</span></a></li> <!-- list item -->
+                    <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li> <!-- list item -->
+                </ul>
+                <div class="nav-divider"></div>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <div class="center-align">
-            <ul>
-                <li>메일</li>
-                <li>카페</li>
-                <li>블로그</li>
-                <li>지식인</li>
-                <li>쇼핑</li>
-                <li>네이버페이</li>
-                <li>네이버TV</li>
-                <li>사전</li>
-                <li>뉴스</li>
-                <li>증권(금융)</li>
-                <li>부동산</li>
-                <li>지도</li>
-            </ul>
+    
+    <div class=".container">
+        <div class="column-left">
+            <div class="ad-main">main ad</div>
+            <div class="news-cast">
+                <div class="head-line">headline</div>
+                <div class="news-stand">newsstand</div>
+            </div>  
         </div>
-    </nav>
-    <main>
+        <div class="column-right">
+            <div class="area-login">log in</div>
+            <div class="area-weather">weather</div>
+            <div class="area-subad">sub ad</div>
+        </div>
+        <div class="column-bottom">
+            <div class="area-themecast">theme cast</div>
+            <div class="area-shopping">shopping</div>
+        </div>
+        <div class="column-banner">
 
-
-    </main>
-    <footer>
+        </div>
+    </div>            
+   
+    <!-- <footer>
         <div>공지사항</div>
         <div>Creator</div>
         <div>회사소개</div>
-    </footer>
+    </footer> -->
 
 </body>
 </html>
