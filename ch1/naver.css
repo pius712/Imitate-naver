@@ -194,11 +194,13 @@ nav li:nth-child(6) span:first-child {
 .container{
     margin: 0 auto;
     width:1080px; 
-    display:block;
+    padding: 8px 0;
+    display:inline-block;
 }
 .column-left{
     float:left;
     width: 740px;
+    
 }
 .ad-main{
     height: 120px;
