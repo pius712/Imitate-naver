@@ -139,67 +139,69 @@ nav {
     height: 47px;
     border-top: 1px solid #f1f3f6;;
 }
-nav ul{
+nav .nav-items{
     padding:16px 0px 0px 4px;
     float:left;
 }
-nav li {
+.nav-items li {
     float:left;
     /* display: inline-block; */
     padding-left: 14px;
 }
-nav li:first-child{
+.nav-items li:first-child{
     padding-left:0px;
 }
-nav li:first-child span:first-child {
+.nav-items li:first-child span:first-child {
     width: 25px;
-    background-position: 0 -285px;
+    background-position: -259px -259px;
     margin-left: 0;
     padding: 0px;
 }
 
-nav li span:first-child {
+.nav-items li span:first-child {
     height: 16px;
     display: inline-block;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav_v191128.png);
     background-repeat: no-repeat;
     /* margin-left: 14px; */
 }
 
-nav li:nth-child(2) span:first-child {
+.nav-items li:nth-child(2) span:first-child {
     width: 27px;
     /* width:40px; */
-    background-position: -279px -52px;
+    background-position:-37px -259px;
 }
 
-nav li:nth-child(3) span:first-child {
+.nav-items li:nth-child(3) span:first-child {
     /* width: 40px; */
     width:40px;
-    background-position: -100px -182px;
+    background-position: -182px -156px;
 }
 
-nav li:nth-child(4) span:first-child {
+
+.nav-items li:nth-child(4) span:first-child {
     /* width: 40px; */
     width:40px;
-    background-position: -101px -156px;
+    background-position: -126px -130px;
 }
 
-nav li:nth-child(5) span:first-child {
+
+.nav-items li:nth-child(5) span:first-child {
     width: 26px;
     /* width:40px; */
-    background-position: -279px -156px;
+    background-position: -294px 0;
 }
 
-nav li:nth-child(6) span:first-child {
+.nav-items li:nth-child(6) span:first-child {
     width: 25px;
     /* width:40px; */
     background-position: -70px -285px;
 }
 
-nav li:nth-child(7) span:first-child {
+.nav-items li:nth-child(7) span:first-child {
     width: 32px;
     width:40px;
-    background-position: -123px -130px;
+    background-position: -244px -208px;
 } 
 .center-nav .btn-more-services{
     float: left;
@@ -207,8 +209,86 @@ nav li:nth-child(7) span:first-child {
 }
 .center-nav .realtime-keyword{
     float:right;
+    width: 198px;
+    height: 20px;
     margin-top: 16px;
-    margin-right: 150px;
+    z-index: 50;
+}
+.realtime-keyword:hover .keyword-li{
+    display: inline-block;
+}
+.keyword-li{
+    display: none;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 332px;
+    height: 334px;
+    border: 1px solid #bec8d8;
+    background-color: white;
+    z-index: 100;
+}
+.keyword-li .keyword-title{
+    padding: 16px 16px 0px;
+    margin: 0px;
+    font-size: 14px;
+    height: 46px;
+}
+.keyword-target{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    color: #666;
+    font-weight: 400;
+    font-size: 12px;
+}
+.keyword-li .keyword-tab{
+    padding: 0 9px 6px 17px;
+    overflow:auto;
+}
+.keyword-tab a{
+    float:left;
+    width:147px;
+    height: 22px;
+    text-align: center;
+    
+    font-size: 12px;
+    line-height: 20px;
+}
+.keyword-left-tab{
+    border-top: 1px solid #bec8d8;
+    border-bottom: 1px solid #bec8d8;
+    border-left: 1px solid #bec8d8;
+    border-right: 0px;
+}
+.keyword-right-tab{
+    border-top: 1px solid #bec8d8;
+    border-bottom: 1px solid #bec8d8;
+    border-right: 1px solid #bec8d8;
+    border-left: 1px solid #bec8d8;
+    background-color:  #f9fafc;
+    color: #888;
+}
+.keyword-li ol{
+    /* list-style: none; */
+    padding:0;
+    margin:0px 16px;
+    border-bottom: 1px solid #bec8d8;
+}
+.keyword-li ol li{
+    height: 22px;
+    padding-top: 4px;
+    margin-left: 21px;
+    font-size: 12px;
+}
+.keyword-info{
+    position: relative;
+    top:4px;
+    width:330px;
+    height: 32px;
+    padding: 4px 15px;
+    font-size: 11px;
+    color: #888;
 }
 .center-nav .realtime-icon{
     position: absolute;
@@ -219,6 +299,7 @@ nav li:nth-child(7) span:first-child {
     width:11px;
     height: 6px;
 }
+
 .nav-divider{
     float: left;
     margin: 18px 16px 0;
@@ -233,6 +314,7 @@ nav li:nth-child(7) span:first-child {
     padding: 8px 0;
     /* display:inline-block; */
     overflow: hidden;
+    z-index: 50;
 }
 .column-left{
     float:left;
