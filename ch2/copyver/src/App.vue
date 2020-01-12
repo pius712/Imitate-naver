@@ -1,3 +1,27 @@
+<template>
+  <div id="app">
+    <app-header></app-header>
+    <app-main></app-main>
+    <app-footer></app-footer>
+  </div>
+</template>
+
+<script>
+import AppHeader from './components/AppHeader';
+import AppMain from './components/AppMain';
+import AppFooter from './components/AppFooter';
+
+export default {
+  name: 'app',
+  components: {
+    AppHeader,
+    AppMain,
+    AppFooter,
+  }
+}
+</script>
+
+<style>
 * {
     box-sizing: border-box;
 }
@@ -57,7 +81,7 @@ header {
     width: 198px;
     height: 50px;
     display: inline-block;
-    background-image: url(../img/naver.svg);
+    background-image: url(../../../img/sp_search.svg);
     background-position: -3px -3px;
     text-indent: 100%;  /* 이렇게하면 오른쪽으로 튀어나간다. */
     overflow:hidden;   /* 컨텐츠 밖으로 튀어나가면 안보이게하는 */
@@ -120,7 +144,7 @@ header {
 
 #search-image{
     
-    background-image: url(../img/sp_search.svg);
+    background-image: url(../../../img/sp_search.svg);
     background-position: -3px -60px;
     background-repeat: no-repeat;
     width: 21px;
@@ -223,27 +247,20 @@ nav li:nth-child(7) span:first-child {
 .ad-main{
     height: 120px;
     background-color: white;
-    border: 1px solid #dee3eb;
 }
-.ad-main img{
-    width: 100%;
-    height: 100%;
-}
+
 .news-cast{
     padding-top: 8px;
-    
     /* background-color: white; */
 }
 .head-line{
     height: 44px;
     background-color: white;
     margin-bottom: 8px;
-    border: 1px solid #dee3eb;
 }
 .news-stand{
     height: 246px;
     background-color: white;
-    border: 1px solid #dee3eb;
 }
 
 .column-right{
@@ -253,10 +270,9 @@ nav li:nth-child(7) span:first-child {
 }
 
 .column-right .area-login{
+    position: relative;
     height: 120px;
     background-color: white;
-    position: relative;
-    border: 1px solid #dee3eb;
 }
 .area-login .lg-local{
     display: block;
@@ -298,144 +314,16 @@ nav li:nth-child(7) span:first-child {
     line-height: 38px;
     color: #666;
 }
-/* .lg-link .lg-login{ */
-.column-right .area-timesqure{
+.column-right .area-weather{
     height: 142px;
     margin: 8px 0px;
     background-color: white;
-    border: 1px solid #dee3eb;
-}
-
-.area-timesquare{
-    height: 142px;
-    width: 332px;
-    border: 1px solid #dee3eb;
-    margin: 8px 0;
-    background-color: white;
-    ;
-}
-.area-timesquare .area-header{
-    padding-left: 15px;
-    position: relative;
-    border-bottom: 1px solid #dee3eb;
-    display: block;
-    height: 34px;
-}
-.area-header .header-info{
-    width: 208px;
-    height: 33px;
-    padding-top: 9px;
-    padding-bottom: 7px;
-}
-.header-info a {
-    display: inline-block;
-}
-.header-info .day-day{
-    float:left;
-    font-size: 14px;
-    letter-spacing: -1px;
-    font-weight: 400;
-}
-.header-info .day-divider{
-    float: left;
-    margin: 0px 6px ;
-    width: 1px;
-    height: 14px;
-    background: #e3e7ee;;
-}
-.header-info .day-news{
-    float:left;
-    color: #888;
-    font-weight: 400;
-    font-size: 12px;
-}
-.area-header .header-paging{
-    position :absolute;
-    top: 9px;
-    right: 78px;
-}
-.header-paging span{
-    font-weight: 300;
-    font-size: 13px;
-}
-.header-btns {
-    position: absolute;
-    top:0px;
-    right:0px;
-    width: 68px;
-    height: 33px;
-}
-.header-btns .header-btn-prev{
-    display: block;
-    padding: 11px 0px;
-    width: 33px;
-    height: 11px;
-    float: left;
-    border-left: 1px solid #dee3eb;
-    text-align: center;
-}
-.header-btns .header-btn-next{
-    display: block;
-    padding: 11px 0px;
-    width: 33px;
-    height: 11px;
-    float: left;
-    border-left: 1px solid #dee3eb;
-    text-align: center;
-}
-.header-btns .icon-prev{
-    position: relative;
-    top: -3px;
-    display: inline-block;
-    width: 6px;
-    height: 11px;
-    background-image: url(../img/headericon.png);
-    background-position: -433px -303px;
-}
-.header-btns .icon-next{
-    position: relative;
-    top: -3px;
-    display: inline-block;
-    width:6px;
-    height: 11px;
-    background-image: url(../img/headericon.png);
-    background-position: -433px -324px;
-}
-.type-news-container{
-    display:inline-block;
-    height:87px;
-    width: 100%;
-}
-.area-ct .type-news{
-    padding: 20px 16px 0px;
-}
-.type-news .tn-items{
-    padding-top: 10px;
-    height: 25px;
-}
-.type-news .tn-items:first-child{
-    padding-top: 2px;
-    height: 15px;
-}
-.tn-items .tn-link1{
-    padding-right: 9px;
-    color: #2565d0;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-}
-.tn-items .tn-text{
-    font-size: 12px;
 }
 .column-right .area-subad{
     height: 150px;
     background-color: white;
-    border: 1px solid #dee3eb;
 }
-.area-subad img{
-    height: 100%;
-    width:100%;
-}
+
 .column-bottom{
     clear:both;
     overflow: hidden;
@@ -447,7 +335,6 @@ nav li:nth-child(7) span:first-child {
     width: 738px;
     height: 882px;
     background-color: white;
-    border: 1px solid #dee3eb;
 }
 .area-shopping{
     position: relative;
@@ -455,9 +342,6 @@ nav li:nth-child(7) span:first-child {
     width: 330px;
     height: 882px;
     background-color: white;
-    border: 1px solid #dee3eb;
-}
-.area-shopping iframe{
-    height: 100%;
-    width: 100%;
-}
+} 
+
+</style>
